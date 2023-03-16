@@ -221,7 +221,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)       
         raw_data(df)              
-
+        # asks user weather to rerun the analysis cycle or quit
         restart = input('\nWould you like to restart with different settings (city, time)? Enter Yes or No!\n')
         if restart.lower() != 'yes':
             print ('\nSee you next time! Bye!')
