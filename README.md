@@ -4,7 +4,7 @@
 Project created on March 16, 2023. 
 
 ### Project Title
-Replace the Project Title
+Bikeshare Git/Github project for training purposes.
 
 ### Description
 Describe what your project is about and what it does
