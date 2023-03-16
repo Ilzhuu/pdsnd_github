@@ -7,10 +7,13 @@ Project created on March 16, 2023.
 Bikeshare Git/Github project for training purposes.
 
 ### Description
-Describe what your project is about and what it does
+Bikeshare.py analyzes data from bakeshare company in three cities. With an interacive interface user is promted to choose city and receives varius usage stats.
 
 ### Files used
-Include the files used
+Data files in comma-separated form:
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
