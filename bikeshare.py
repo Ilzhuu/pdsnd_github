@@ -26,7 +26,7 @@ def get_filters():
     while True:
         try:
             chosen_city = input('\nWhich city? Choose either Chicago, New York city or Washington by writing the city name!\n')
-            verify = CITY_DATA[chosen_city.lower()]
+            verify_if_city_valid = CITY_DATA[chosen_city.lower()]
             city = chosen_city.lower()
             print ('\nGot it! We\'ll consider', city.title())
             break
@@ -116,7 +116,7 @@ def time_stats(df):
     df['hour'] = df['Start Time'].dt.hour
     print('The most popular day start hour is', df['hour'].mode()[0]) 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese calculations took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def station_stats(df):
@@ -135,7 +135,7 @@ def station_stats(df):
     df['route'] = df['Start Station'] + ' - ' + df['End Station']
     print('The most common route is', df['route'].mode()[0])
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese calculations took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -151,7 +151,7 @@ def trip_duration_stats(df):
     # display mean travel time
     print('The mean travel time in this city is', round((df['Trip Duration'].mean()/60),2), 'minutes')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese calculations took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -176,7 +176,7 @@ def user_stats(df):
         print('The youngest registered user is born on', int(df['Birth Year'].max()))
         print('The most typical birth year for users in this city is year', int(df['Birth Year'].mode()[0]))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese calculations took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def raw_data(df):
