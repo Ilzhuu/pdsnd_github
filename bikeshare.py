@@ -26,7 +26,7 @@ def get_filters():
     while True:
         try:
             chosen_city = input('\nWhich city? Choose either Chicago, New York city or Washington by writing the city name!\n')
-            verify = CITY_DATA[chosen_city.lower()]
+            verify_if_city_valid = CITY_DATA[chosen_city.lower()]
             city = chosen_city.lower()
             print ('\nGot it! We\'ll consider', city.title())
             break
